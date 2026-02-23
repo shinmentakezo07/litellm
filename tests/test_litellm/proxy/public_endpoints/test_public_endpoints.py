@@ -110,6 +110,24 @@ def test_watsonx_provider_fields():
     assert "zen_api_key" in field_keys
 
 
+def test_kiro_gateway_provider_fields():
+    """Test that Kiro Gateway provider exposes API base/key and refresh token fields."""
+    app = FastAPI()
+    app.include_router(router)
+    client = TestClient(app)
+
+    response = client.get("/public/providers/fields")
+    providers = response.json()
+
+    kiro = next((p for p in providers if p["provider"] == "KIRO_GATEWAY"), None)
+    assert kiro is not None
+
+    field_keys = [f["key"] for f in kiro["credential_fields"]]
+    assert "api_base" in field_keys
+    assert "api_key" in field_keys
+    assert "refresh_token" in field_keys
+
+
 def test_public_model_hub_with_healthy_model():
     """Test that health information is populated for a healthy model"""
     app = FastAPI()

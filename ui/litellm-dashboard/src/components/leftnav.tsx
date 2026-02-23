@@ -134,6 +134,13 @@ const menuGroups: MenuGroup[] = [
             label: "Vector Stores",
             icon: <DatabaseOutlined />,
           },
+          {
+            key: "kiro-settings",
+            page: "kiro-settings",
+            label: "Kiro",
+            icon: <SettingOutlined />,
+            roles: all_admin_roles,
+          },
         ],
       },
     ],

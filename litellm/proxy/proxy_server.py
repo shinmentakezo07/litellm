@@ -1346,17 +1346,42 @@ try:
                     # Another process may have already moved this file.
                     continue
 
-    # Handle HTML file restructuring
-    # Only restructure if:
-    # 1. UI is not already pre-restructured
-    # 2. Filesystem is writable
+    def _has_unrestructured_html_routes(ui_root: str) -> bool:
+        """Return True when extensionless route files still need restructuring."""
+
+        if not os.path.isdir(ui_root):
+            return False
+
+        try:
+            for current_root, _, files in os.walk(ui_root):
+                rel_root = os.path.relpath(current_root, ui_root)
+                first_segment = "" if rel_root == "." else rel_root.split(os.sep)[0]
+
+                # Ignore Next.js asset directories
+                if first_segment in {"_next", "litellm-asset-prefix"}:
+                    continue
+
+                for filename in files:
+                    if filename.endswith(".html") and filename != "index.html":
+                        return True
+        except (PermissionError, OSError) as e:
+            verbose_proxy_logger.debug(
+                f"Could not scan {ui_root} for unrestructured HTML files: {e}"
+            )
+            return False
+
+        return False
+
+    # Handle HTML file restructuring.
+    # Restructure when the UI is writable and there are route .html files left.
     try:
         is_pre_restructured = _is_ui_pre_restructured(ui_path)
+        has_unrestructured_html_routes = _has_unrestructured_html_routes(ui_path)
         is_writable = os.access(ui_path, os.W_OK)
 
-        if is_pre_restructured:
+        if not has_unrestructured_html_routes:
             verbose_proxy_logger.info(
-                f"Skipping UI restructuring: {ui_path} is already pre-restructured"
+                f"Skipping UI restructuring: {ui_path} has no route HTML files to convert"
             )
         elif not is_writable:
             verbose_proxy_logger.warning(
@@ -1365,6 +1390,11 @@ try:
                 f"Pre-build and restructure UI in Dockerfile for read-only deployments."
             )
         else:
+            if is_pre_restructured:
+                verbose_proxy_logger.info(
+                    f"UI at {ui_path} is partially pre-restructured. "
+                    f"Applying incremental HTML route restructuring."
+                )
             _restructure_ui_html_files(ui_path)
             verbose_proxy_logger.info(f"Restructured UI directory: {ui_path}")
     except PermissionError as e:
@@ -11401,6 +11431,8 @@ async def get_config_list(
         "maximum_spend_logs_retention_period": {"type": "String"},
         "mcp_internal_ip_ranges": {"type": "List"},
         "mcp_trusted_proxy_ranges": {"type": "List"},
+        "kiro_model_id": {"type": "String"},
+        "kiro_refresh_token": {"type": "String"},
         "always_include_stream_usage": {"type": "Boolean"},
         "forward_client_headers_to_llm_api": {"type": "Boolean"},
     }

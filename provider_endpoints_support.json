@@ -2439,6 +2439,15 @@
         "responses": true
       }
     },
+    "kiro_gateway": {
+      "display_name": "Kiro Gateway (`kiro_gateway`)",
+      "url": "https://docs.litellm.ai/docs/providers/kiro_gateway",
+      "endpoints": {
+        "chat_completions": true,
+        "messages": true,
+        "responses": true
+      }
+    },
     "xiaomi_mimo": {
       "display_name": "Xiaomi Mimo (`xiaomi_mimo`)",
       "url": "https://docs.litellm.ai/docs/providers/xiaomi_mimo",

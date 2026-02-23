@@ -35,6 +35,7 @@ import TransformRequestPanel from "@/components/transform_request";
 import UIThemeSettings from "@/components/ui_theme_settings";
 import Usage from "@/components/usage";
 import UserDashboard from "@/components/user_dashboard";
+import KiroSettings from "@/components/kiro_settings";
 import { AccessGroupsPage } from "@/components/AccessGroups/AccessGroupsPage";
 import VectorStoreManagement from "@/components/vector_store_management";
 import SpendLogsTable from "@/components/view_logs";
@@ -497,6 +498,8 @@ function CreateKeyPageContent() {
                     />
                   ) : page == "ui-theme" ? (
                     <UIThemeSettings userID={userID} userRole={userRole} accessToken={accessToken} />
+                  ) : page == "kiro-settings" ? (
+                    <KiroSettings accessToken={accessToken} />
                   ) : page == "cost-tracking" ? (
                     <CostTrackingSettings userID={userID} userRole={userRole} accessToken={accessToken} />
                   ) : page == "model-hub-table" ? (

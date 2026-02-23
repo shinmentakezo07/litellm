@@ -4926,6 +4926,54 @@ export const deleteConfigFieldSetting = async (accessToken: string, fieldName: s
   }
 };
 
+export const updateKiroSettings = async (
+  accessToken: string,
+  settings: { modelId?: string | null; refreshToken?: string | null },
+) => {
+  try {
+    const updates = [
+      {
+        field_name: "kiro_model_id",
+        field_value: settings.modelId && settings.modelId.trim().length > 0 ? settings.modelId : null,
+        config_type: "general_settings",
+      },
+      {
+        field_name: "kiro_refresh_token",
+        field_value:
+          settings.refreshToken && settings.refreshToken.trim().length > 0 ? settings.refreshToken : null,
+        config_type: "general_settings",
+      },
+    ];
+
+    const url = proxyBaseUrl ? `${proxyBaseUrl}/config/field/update` : `/config/field/update`;
+
+    await Promise.all(
+      updates.map(async (payload) => {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            [globalLitellmHeaderName]: `Bearer ${accessToken}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+
+        if (!response.ok) {
+          const errorData = await response.json();
+          const errorMessage = deriveErrorMessage(errorData);
+          handleError(errorMessage);
+          throw new Error(errorMessage);
+        }
+      }),
+    );
+
+    NotificationsManager.success("Kiro settings updated successfully");
+  } catch (error) {
+    console.error("Failed to update Kiro settings:", error);
+    throw error;
+  }
+};
+
 export const deletePassThroughEndpointsCall = async (accessToken: string, endpointId: string) => {
   try {
     let url = proxyBaseUrl

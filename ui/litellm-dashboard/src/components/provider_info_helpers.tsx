@@ -23,6 +23,7 @@ export enum Providers {
   Hosted_Vllm = "vllm",
   Infinity = "Infinity",
   JinaAI = "Jina AI",
+  KiroGateway = "Kiro Gateway",
   MiniMax = "MiniMax",
   MistralAI = "Mistral AI",
   Ollama = "Ollama",
@@ -86,6 +87,7 @@ export const provider_map: Record<string, string> = {
   SageMaker: "sagemaker_chat",
   Voyage: "voyage",
   JinaAI: "jina_ai",
+  KiroGateway: "kiro_gateway",
   VolcEngine: "volcengine",
   DeepInfra: "deepinfra",
   Hosted_Vllm: "hosted_vllm",
@@ -138,6 +140,7 @@ export const providerLogoMap: Record<string, string> = {
   [Providers.FalAI]: `${asset_logos_folder}fal_ai.jpg`,
   [Providers.Voyage]: `${asset_logos_folder}voyage.webp`,
   [Providers.JinaAI]: `${asset_logos_folder}jina.png`,
+  [Providers.KiroGateway]: `${asset_logos_folder}openai_small.svg`,
   [Providers.VolcEngine]: `${asset_logos_folder}volcengine.png`,
   [Providers.DeepInfra]: `${asset_logos_folder}deepinfra.png`,
   [Providers.SAP]: `${asset_logos_folder}sap.png`,
@@ -196,6 +199,8 @@ export const getPlaceholder = (selectedProvider: string): string => {
     return "voyage/";
   } else if (selectedProvider == Providers.JinaAI) {
     return "jina_ai/";
+  } else if (selectedProvider == Providers.KiroGateway) {
+    return "kiro_gateway/us.anthropic.claude-sonnet-4-20250514-v1:0";
   } else if (selectedProvider == Providers.VolcEngine) {
     return "volcengine/<any-model-on-volcengine>";
   } else if (selectedProvider == Providers.DeepInfra) {
