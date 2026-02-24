@@ -1,0 +1,494 @@
+2026-02-24 04:49:27,518 - litellm_proxy_extras - INFO - Running prisma migrate deploy
+2026-02-24 04:49:31,137 - litellm_proxy_extras - INFO - prisma db error: Error: P1001: Can't reach database server at `localhost`:`5432`
+
+Please make sure your database server is running at `localhost`:`5432`.
+, e: Prisma schema loaded from schema.prisma
+Datasource "client": PostgreSQL database "litellm", schema "public" at "localhost:5432"
+
+
+2026-02-24 04:49:31,138 - litellm_proxy_extras - INFO - Running prisma migrate deploy
+2026-02-24 04:49:34,637 - litellm_proxy_extras - INFO - prisma db error: Error: P1001: Can't reach database server at `localhost`:`5432`
+
+Please make sure your database server is running at `localhost`:`5432`.
+, e: Prisma schema loaded from schema.prisma
+Datasource "client": PostgreSQL database "litellm", schema "public" at "localhost:5432"
+
+
+2026-02-24 04:49:34,638 - litellm_proxy_extras - INFO - Running prisma migrate deploy
+2026-02-24 04:49:38,069 - litellm_proxy_extras - INFO - prisma db error: Error: P1001: Can't reach database server at `localhost`:`5432`
+
+Please make sure your database server is running at `localhost`:`5432`.
+, e: Prisma schema loaded from schema.prisma
+Datasource "client": PostgreSQL database "litellm", schema "public" at "localhost:5432"
+
+
+2026-02-24 04:49:38,070 - litellm_proxy_extras - INFO - Running prisma migrate deploy
+2026-02-24 04:49:41,419 - litellm_proxy_extras - INFO - prisma db error: Error: P1001: Can't reach database server at `localhost`:`5432`
+
+Please make sure your database server is running at `localhost`:`5432`.
+, e: Prisma schema loaded from schema.prisma
+Datasource "client": PostgreSQL database "litellm", schema "public" at "localhost:5432"
+
+
+INFO:     Started server process [25076]
+INFO:     Waiting for application startup.
+
+   ██╗     ██╗████████╗███████╗██╗     ██╗     ███╗   ███╗
+   ██║     ██║╚══██╔══╝██╔════╝██║     ██║     ████╗ ████║
+   ██║     ██║   ██║   █████╗  ██║     ██║     ██╔████╔██║
+   ██║     ██║   ██║   ██╔══╝  ██║     ██║     ██║╚██╔╝██║
+   ███████╗██║   ██║   ███████╗███████╗███████╗██║ ╚═╝ ██║
+   ╚══════╝╚═╝   ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝
+
+
+[1;37m#------------------------------------------------------------#[0m
+[1;37m#                                                            #[0m
+[1;37m#            'This product would be better if...'             #[0m
+[1;37m#        https://github.com/BerriAI/litellm/issues/new        #[0m
+[1;37m#                                                            #[0m
+[1;37m#------------------------------------------------------------#[0m
+
+ Thank you for using LiteLLM! - Krrish & Ishaan
+
+
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+
+
+[32mLiteLLM: Proxy initialized with Config, Set models:[0m
+[32m    gpt-3.5-turbo[0m
+[32m    gpt-4[0m
+ERROR:    Traceback (most recent call last):
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/starlette/routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/proxy_server.py", line 806, in proxy_startup_event
+    prisma_client = await ProxyStartupEvent._setup_prisma_client(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/proxy_server.py", line 5891, in _setup_prisma_client
+    PrismaDBExceptionHandler.handle_db_exception(e)
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/db/exception_handler.py", line 102, in handle_db_exception
+    raise e
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/proxy_server.py", line 5885, in _setup_prisma_client
+    await prisma_client.health_check()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3814, in health_check
+    raise e
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3796, in health_check
+    response = await self.db.query_raw(sql_query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+ERROR:    Application startup failed. Exiting.

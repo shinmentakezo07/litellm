@@ -1,0 +1,765 @@
+[92m04:50:07 - LiteLLM Proxy:WARNING[0m: proxy_cli.py:48 - append_query_params received empty or non-string URL, returning empty string
+2026-02-24 04:50:10,700 - litellm_proxy_extras - INFO - Running prisma migrate deploy
+2026-02-24 04:50:14,230 - litellm_proxy_extras - INFO - prisma db error: Error: Prisma schema validation - (get-config wasm)
+Error code: P1012
+error: Error validating datasource `client`: You must provide a nonempty URL. The environment variable `DATABASE_URL` resolved to an empty string.
+  -->  schema.prisma:3
+   | 
+ 2 |   provider = "postgresql"
+ 3 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1
+[Context: getConfig]
+
+Prisma CLI Version : 5.4.2
+, e: Prisma schema loaded from schema.prisma
+Datasource "client": PostgreSQL database
+
+
+2026-02-24 04:50:14,231 - litellm_proxy_extras - INFO - Running prisma migrate deploy
+2026-02-24 04:50:17,578 - litellm_proxy_extras - INFO - prisma db error: Error: Prisma schema validation - (get-config wasm)
+Error code: P1012
+error: Error validating datasource `client`: You must provide a nonempty URL. The environment variable `DATABASE_URL` resolved to an empty string.
+  -->  schema.prisma:3
+   | 
+ 2 |   provider = "postgresql"
+ 3 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1
+[Context: getConfig]
+
+Prisma CLI Version : 5.4.2
+, e: Prisma schema loaded from schema.prisma
+Datasource "client": PostgreSQL database
+
+
+2026-02-24 04:50:17,579 - litellm_proxy_extras - INFO - Running prisma migrate deploy
+2026-02-24 04:50:20,956 - litellm_proxy_extras - INFO - prisma db error: Error: Prisma schema validation - (get-config wasm)
+Error code: P1012
+error: Error validating datasource `client`: You must provide a nonempty URL. The environment variable `DATABASE_URL` resolved to an empty string.
+  -->  schema.prisma:3
+   | 
+ 2 |   provider = "postgresql"
+ 3 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1
+[Context: getConfig]
+
+Prisma CLI Version : 5.4.2
+, e: Prisma schema loaded from schema.prisma
+Datasource "client": PostgreSQL database
+
+
+2026-02-24 04:50:20,956 - litellm_proxy_extras - INFO - Running prisma migrate deploy
+2026-02-24 04:50:24,514 - litellm_proxy_extras - INFO - prisma db error: Error: Prisma schema validation - (get-config wasm)
+Error code: P1012
+error: Error validating datasource `client`: You must provide a nonempty URL. The environment variable `DATABASE_URL` resolved to an empty string.
+  -->  schema.prisma:3
+   | 
+ 2 |   provider = "postgresql"
+ 3 |   url      = env("DATABASE_URL")
+   | 
+
+Validation Error Count: 1
+[Context: getConfig]
+
+Prisma CLI Version : 5.4.2
+, e: Prisma schema loaded from schema.prisma
+Datasource "client": PostgreSQL database
+
+
+INFO:     Started server process [28668]
+INFO:     Waiting for application startup.
+[92m04:50:24 - LiteLLM Proxy:DEBUG[0m: proxy_server.py:746 - litellm.proxy.proxy_server.py::startup() - CHECKING PREMIUM USER - False
+[92m04:50:24 - LiteLLM Proxy:DEBUG[0m: proxy_server.py:759 - worker_config: {"model": null, "alias": null, "api_base": null, "api_version": "2024-07-01-preview", "debug": false, "detailed_debug": true, "temperature": null, "max_tokens": null, "request_timeout": null, "max_budget": null, "telemetry": true, "drop_params": false, "add_function_to_prompt": false, "headers": null, "save": false, "config": "simple_config.yaml", "use_queue": false}
+
+   ██╗     ██╗████████╗███████╗██╗     ██╗     ███╗   ███╗
+   ██║     ██║╚══██╔══╝██╔════╝██║     ██║     ████╗ ████║
+   ██║     ██║   ██║   █████╗  ██║     ██║     ██╔████╔██║
+   ██║     ██║   ██║   ██╔══╝  ██║     ██║     ██║╚██╔╝██║
+   ███████╗██║   ██║   ███████╗███████╗███████╗██║ ╚═╝ ██║
+   ╚══════╝╚═╝   ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝     ╚═╝
+
+
+[1;37m#------------------------------------------------------------#[0m
+[1;37m#                                                            #[0m
+[1;37m#           'It would help me if you could add...'            #[0m
+[1;37m#        https://github.com/BerriAI/litellm/issues/new        #[0m
+[1;37m#                                                            #[0m
+[1;37m#------------------------------------------------------------#[0m
+
+ Thank you for using LiteLLM! - Krrish & Ishaan
+
+
+
+[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+
+
+[92m04:50:24 - LiteLLM Proxy:DEBUG[0m: proxy_server.py:2792 - [94m setting litellm.drop_params=True[0m
+[92m04:50:24 - LiteLLM Proxy:DEBUG[0m: proxy_server.py:2792 - [94m setting litellm.telemetry=False[0m
+[92m04:50:24 - LiteLLM Proxy:DEBUG[0m: proxy_server.py:3179 - _alerting_callbacks: {'master_key': 'sk-1234'}
+[32mLiteLLM: Proxy initialized with Config, Set models:[0m
+[32m    gpt-3.5-turbo[0m
+[32m    gpt-4[0m
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:5454 - checking potential_model_names in litellm.model_cost: {'split_model': '18af1c31a4537a9b78ab1b0dab7bc4f9c7bcfe0d9cd0dab864a8e59749b09d1d', 'combined_model_name': '18af1c31a4537a9b78ab1b0dab7bc4f9c7bcfe0d9cd0dab864a8e59749b09d1d', 'stripped_model_name': '18af1c31a4537a9b78ab1b0dab7bc4f9c7bcfe0d9cd0dab864a8e59749b09d1d', 'combined_stripped_model_name': '18af1c31a4537a9b78ab1b0dab7bc4f9c7bcfe0d9cd0dab864a8e59749b09d1d', 'custom_llm_provider': None}
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:5724 - Error getting model info: This model isn't mapped yet. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:2787 - added/updated model=18af1c31a4537a9b78ab1b0dab7bc4f9c7bcfe0d9cd0dab864a8e59749b09d1d in litellm.model_cost: 18af1c31a4537a9b78ab1b0dab7bc4f9c7bcfe0d9cd0dab864a8e59749b09d1d
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:5454 - checking potential_model_names in litellm.model_cost: {'split_model': 'gpt-3.5-turbo', 'combined_model_name': 'openai/gpt-3.5-turbo', 'stripped_model_name': 'openai/gpt-3.5-turbo', 'combined_stripped_model_name': 'openai/gpt-3.5-turbo', 'custom_llm_provider': 'openai'}
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:5824 - model_info: {'key': 'gpt-3.5-turbo', 'max_tokens': 4096, 'max_input_tokens': 16385, 'max_output_tokens': 4096, 'input_cost_per_token': 5e-07, 'input_cost_per_token_flex': None, 'input_cost_per_token_priority': None, 'cache_creation_input_token_cost': None, 'cache_creation_input_token_cost_above_200k_tokens': None, 'cache_read_input_token_cost': None, 'cache_read_input_token_cost_above_200k_tokens': None, 'cache_read_input_token_cost_flex': None, 'cache_read_input_token_cost_priority': None, 'cache_creation_input_token_cost_above_1hr': None, 'input_cost_per_character': None, 'input_cost_per_token_above_128k_tokens': None, 'input_cost_per_token_above_200k_tokens': None, 'input_cost_per_query': None, 'input_cost_per_second': None, 'input_cost_per_audio_token': None, 'input_cost_per_image_token': None, 'input_cost_per_image': None, 'input_cost_per_audio_per_second': None, 'input_cost_per_video_per_second': None, 'input_cost_per_token_batches': None, 'output_cost_per_token_batches': None, 'output_cost_per_token': 1.5e-06, 'output_cost_per_token_flex': None, 'output_cost_per_token_priority': None, 'output_cost_per_audio_token': None, 'output_cost_per_character': None, 'output_cost_per_reasoning_token': None, 'output_cost_per_token_above_128k_tokens': None, 'output_cost_per_character_above_128k_tokens': None, 'output_cost_per_token_above_200k_tokens': None, 'output_cost_per_second': None, 'output_cost_per_video_per_second': None, 'output_cost_per_image': None, 'output_cost_per_image_token': None, 'output_vector_size': None, 'citation_cost_per_token': None, 'tiered_pricing': None, 'litellm_provider': 'openai', 'mode': 'chat', 'supports_system_messages': True, 'supports_response_schema': None, 'supports_vision': None, 'supports_function_calling': True, 'supports_tool_choice': True, 'supports_assistant_prefill': None, 'supports_prompt_caching': True, 'supports_audio_input': None, 'supports_audio_output': None, 'supports_pdf_input': None, 'supports_embedding_image_input': None, 'supports_native_streaming': None, 'supports_web_search': None, 'supports_url_context': None, 'supports_reasoning': None, 'supports_computer_use': None, 'search_context_cost_per_query': None, 'tpm': None, 'rpm': None, 'ocr_cost_per_page': None, 'annotation_cost_per_page': None}
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:2787 - added/updated model=gpt-3.5-turbo in litellm.model_cost: gpt-3.5-turbo
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:5454 - checking potential_model_names in litellm.model_cost: {'split_model': '689e1e10fb4c7fac2cef6ba569d0ecf4ad527cd4d276f6ae43a90d99ac5d08d9', 'combined_model_name': '689e1e10fb4c7fac2cef6ba569d0ecf4ad527cd4d276f6ae43a90d99ac5d08d9', 'stripped_model_name': '689e1e10fb4c7fac2cef6ba569d0ecf4ad527cd4d276f6ae43a90d99ac5d08d9', 'combined_stripped_model_name': '689e1e10fb4c7fac2cef6ba569d0ecf4ad527cd4d276f6ae43a90d99ac5d08d9', 'custom_llm_provider': None}
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:5724 - Error getting model info: This model isn't mapped yet. Add it here - https://github.com/BerriAI/litellm/blob/main/model_prices_and_context_window.json
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:2787 - added/updated model=689e1e10fb4c7fac2cef6ba569d0ecf4ad527cd4d276f6ae43a90d99ac5d08d9 in litellm.model_cost: 689e1e10fb4c7fac2cef6ba569d0ecf4ad527cd4d276f6ae43a90d99ac5d08d9
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:5454 - checking potential_model_names in litellm.model_cost: {'split_model': 'gpt-4', 'combined_model_name': 'openai/gpt-4', 'stripped_model_name': 'openai/gpt-4', 'combined_stripped_model_name': 'openai/gpt-4', 'custom_llm_provider': 'openai'}
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:5824 - model_info: {'key': 'gpt-4', 'max_tokens': 4096, 'max_input_tokens': 8192, 'max_output_tokens': 4096, 'input_cost_per_token': 3e-05, 'input_cost_per_token_flex': None, 'input_cost_per_token_priority': None, 'cache_creation_input_token_cost': None, 'cache_creation_input_token_cost_above_200k_tokens': None, 'cache_read_input_token_cost': None, 'cache_read_input_token_cost_above_200k_tokens': None, 'cache_read_input_token_cost_flex': None, 'cache_read_input_token_cost_priority': None, 'cache_creation_input_token_cost_above_1hr': None, 'input_cost_per_character': None, 'input_cost_per_token_above_128k_tokens': None, 'input_cost_per_token_above_200k_tokens': None, 'input_cost_per_query': None, 'input_cost_per_second': None, 'input_cost_per_audio_token': None, 'input_cost_per_image_token': None, 'input_cost_per_image': None, 'input_cost_per_audio_per_second': None, 'input_cost_per_video_per_second': None, 'input_cost_per_token_batches': None, 'output_cost_per_token_batches': None, 'output_cost_per_token': 6e-05, 'output_cost_per_token_flex': None, 'output_cost_per_token_priority': None, 'output_cost_per_audio_token': None, 'output_cost_per_character': None, 'output_cost_per_reasoning_token': None, 'output_cost_per_token_above_128k_tokens': None, 'output_cost_per_character_above_128k_tokens': None, 'output_cost_per_token_above_200k_tokens': None, 'output_cost_per_second': None, 'output_cost_per_video_per_second': None, 'output_cost_per_image': None, 'output_cost_per_image_token': None, 'output_vector_size': None, 'citation_cost_per_token': None, 'tiered_pricing': None, 'litellm_provider': 'openai', 'mode': 'chat', 'supports_system_messages': True, 'supports_response_schema': None, 'supports_vision': None, 'supports_function_calling': True, 'supports_tool_choice': True, 'supports_assistant_prefill': None, 'supports_prompt_caching': True, 'supports_audio_input': None, 'supports_audio_output': None, 'supports_pdf_input': None, 'supports_embedding_image_input': None, 'supports_native_streaming': None, 'supports_web_search': None, 'supports_url_context': None, 'supports_reasoning': None, 'supports_computer_use': None, 'search_context_cost_per_query': None, 'tpm': None, 'rpm': None, 'ocr_cost_per_page': None, 'annotation_cost_per_page': None}
+[92m04:50:24 - LiteLLM:DEBUG[0m: utils.py:2787 - added/updated model=gpt-4 in litellm.model_cost: gpt-4
+[92m04:50:24 - LiteLLM Router:DEBUG[0m: router.py:6457 - 
+Initialized Model List ['gpt-3.5-turbo', 'gpt-4']
+[92m04:50:24 - LiteLLM Router:INFO[0m: router.py:748 - Routing strategy: simple-shuffle
+[92m04:50:24 - LiteLLM Proxy:DEBUG[0m: proxy_server.py:3155 - Policy engine: no policies in config, skipping
+[92m04:50:24 - LiteLLM Proxy:DEBUG[0m: utils.py:2240 - Creating Prisma Client..
+[92m04:50:26 - LiteLLM Proxy:DEBUG[0m: utils.py:2298 - Success - Created Prisma Client
+[92m04:50:26 - LiteLLM Proxy:DEBUG[0m: utils.py:3509 - PrismaClient: connect() called Attempting to Connect to DB
+[92m04:50:26 - LiteLLM Proxy:DEBUG[0m: utils.py:3513 - PrismaClient: DB not connected, Attempting to Connect to DB
+[92m04:50:26 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - LiteLLM Prisma Client Exception connect(): Expected /teamspace/studios/this_studio/shinway/prisma-query-engine-debian-openssl-3.6.x or /teamspace/studios/this_studio/.cache/prisma-python/binaries/5.4.2/ac9d7041ed77bcc8a8dbd2ab6616b39013829574/prisma-query-engine-debian-openssl-3.6.x to exist but neither were found or could not be executed.
+Try running prisma py fetch
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3516, in connect
+    await self.db.connect()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 421, in connect
+    await self.__engine.connect(
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 134, in connect
+    self.file = file = self._ensure_file()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 122, in _ensure_file
+    return utils.ensure(BINARY_PATHS.query_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/utils.py", line 117, in ensure
+    raise errors.BinaryNotFoundError(
+prisma.engine.errors.BinaryNotFoundError: Expected /teamspace/studios/this_studio/shinway/prisma-query-engine-debian-openssl-3.6.x or /teamspace/studios/this_studio/.cache/prisma-python/binaries/5.4.2/ac9d7041ed77bcc8a8dbd2ab6616b39013829574/prisma-query-engine-debian-openssl-3.6.x to exist but neither were found or could not be executed.
+Try running prisma py fetch
+
+[92m04:50:26 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - Backing off... this was attempt #1
+Traceback (most recent call last):
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3533, in connect
+    raise e
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3516, in connect
+    await self.db.connect()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 421, in connect
+    await self.__engine.connect(
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 134, in connect
+    self.file = file = self._ensure_file()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 122, in _ensure_file
+    return utils.ensure(BINARY_PATHS.query_engine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/utils.py", line 117, in ensure
+    raise errors.BinaryNotFoundError(
+prisma.engine.errors.BinaryNotFoundError: Expected /teamspace/studios/this_studio/shinway/prisma-query-engine-debian-openssl-3.6.x or /teamspace/studios/this_studio/.cache/prisma-python/binaries/5.4.2/ac9d7041ed77bcc8a8dbd2ab6616b39013829574/prisma-query-engine-debian-openssl-3.6.x to exist but neither were found or could not be executed.
+Try running prisma py fetch
+
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: utils.py:3509 - PrismaClient: connect() called Attempting to Connect to DB
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: prisma_client.py:203 - IAM token auth not enabled, skipping token refresh task
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - LiteLLM Prisma Client Exception disconnect(): Not connected to the query engine
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3796, in health_check
+    response = await self.db.query_raw(sql_query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - Backing off... this was attempt #1
+Traceback (most recent call last):
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3814, in health_check
+    raise e
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3796, in health_check
+    response = await self.db.query_raw(sql_query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - Backing off... this was attempt #1
+Traceback (most recent call last):
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 2388, in check_view_exists
+    ret = await self.db.query_raw(
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - Backing off... this was attempt #1
+Traceback (most recent call last):
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3834, in _fetch_row_count
+    result = await self.db.query_raw(query=sql_query)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - Backing off... this was attempt #2
+Traceback (most recent call last):
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3834, in _fetch_row_count
+    result = await self.db.query_raw(query=sql_query)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - LiteLLM Prisma Client Exception disconnect(): Not connected to the query engine
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3796, in health_check
+    response = await self.db.query_raw(sql_query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - Backing off... this was attempt #2
+Traceback (most recent call last):
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3814, in health_check
+    raise e
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3796, in health_check
+    response = await self.db.query_raw(sql_query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+[92m04:50:27 - LiteLLM Proxy:DEBUG[0m: utils.py:154 - LiteLLM Prisma Client Exception disconnect(): Not connected to the query engine
+Traceback (most recent call last):
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3796, in health_check
+    response = await self.db.query_raw(sql_query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+ERROR:    Traceback (most recent call last):
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/starlette/routing.py", line 694, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/fastapi/routing.py", line 211, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/proxy_server.py", line 806, in proxy_startup_event
+    prisma_client = await ProxyStartupEvent._setup_prisma_client(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/proxy_server.py", line 5891, in _setup_prisma_client
+    PrismaDBExceptionHandler.handle_db_exception(e)
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/db/exception_handler.py", line 102, in handle_db_exception
+    raise e
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/proxy_server.py", line 5885, in _setup_prisma_client
+    await prisma_client.health_check()
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/backoff/_async.py", line 151, in retry
+    ret = await target(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3814, in health_check
+    raise e
+  File "/teamspace/studios/this_studio/shinway/litellm/proxy/utils.py", line 3796, in health_check
+    response = await self.db.query_raw(sql_query)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 520, in query_raw
+    resp = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/client.py", line 624, in _execute
+    return await self._engine.query(builder.build(), tx_id=self._tx_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/query.py", line 244, in query
+    return await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeus/miniconda3/envs/cloudspace/lib/python3.12/site-packages/prisma/engine/http.py", line 97, in request
+    raise errors.NotConnectedError('Not connected to the query engine')
+prisma.engine.errors.NotConnectedError: Not connected to the query engine
+
+ERROR:    Application startup failed. Exiting.
