@@ -4926,50 +4926,156 @@ export const deleteConfigFieldSetting = async (accessToken: string, fieldName: s
   }
 };
 
-export const updateKiroSettings = async (
+export const updateKiroSettingField = async (
   accessToken: string,
-  settings: { modelId?: string | null; refreshToken?: string | null },
+  fieldName: "kiro_model_id" | "kiro_refresh_token" | "kiro_api_base" | "kiro_model_db_id",
+  fieldValue: string | null,
 ) => {
   try {
-    const updates = [
-      {
-        field_name: "kiro_model_id",
-        field_value: settings.modelId && settings.modelId.trim().length > 0 ? settings.modelId : null,
-        config_type: "general_settings",
-      },
-      {
-        field_name: "kiro_refresh_token",
-        field_value:
-          settings.refreshToken && settings.refreshToken.trim().length > 0 ? settings.refreshToken : null,
-        config_type: "general_settings",
-      },
-    ];
-
     const url = proxyBaseUrl ? `${proxyBaseUrl}/config/field/update` : `/config/field/update`;
 
-    await Promise.all(
-      updates.map(async (payload) => {
-        const response = await fetch(url, {
-          method: "POST",
-          headers: {
-            [globalLitellmHeaderName]: `Bearer ${accessToken}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        });
-
-        if (!response.ok) {
-          const errorData = await response.json();
-          const errorMessage = deriveErrorMessage(errorData);
-          handleError(errorMessage);
-          throw new Error(errorMessage);
-        }
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        [globalLitellmHeaderName]: `Bearer ${accessToken}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        field_name: fieldName,
+        field_value: fieldValue,
+        config_type: "general_settings",
       }),
-    );
+    });
 
-    NotificationsManager.success("Kiro settings updated successfully");
+    if (!response.ok) {
+      const errorData = await response.json();
+      const errorMessage = deriveErrorMessage(errorData);
+      handleError(errorMessage);
+      throw new Error(errorMessage);
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error("Failed to update Kiro setting field:", error);
+    throw error;
+  }
+};
+
+export const updateKiroSettings = async (
+  accessToken: string,
+  settings: {
+    modelId?: string | null;
+    refreshToken?: string | null;
+    apiBase?: string | null;
+    modelDbId?: string | null;
+  },
+  options?: {
+    silent?: boolean;
+  },
+) => {
+  try {
+    await Promise.all([
+      updateKiroSettingField(
+        accessToken,
+        "kiro_model_id",
+        settings.modelId && settings.modelId.trim().length > 0 ? settings.modelId : null,
+      ),
+      updateKiroSettingField(
+        accessToken,
+        "kiro_refresh_token",
+        settings.refreshToken && settings.refreshToken.trim().length > 0 ? settings.refreshToken : null,
+      ),
+      updateKiroSettingField(
+        accessToken,
+        "kiro_api_base",
+        settings.apiBase && settings.apiBase.trim().length > 0 ? settings.apiBase : null,
+      ),
+      updateKiroSettingField(
+        accessToken,
+        "kiro_model_db_id",
+        settings.modelDbId && settings.modelDbId.trim().length > 0 ? settings.modelDbId : null,
+      ),
+    ]);
+
+    if (options?.silent !== true) {
+      NotificationsManager.success("Kiro settings updated successfully");
+    }
   } catch (error) {
     console.error("Failed to update Kiro settings:", error);
+    throw error;
+  }
+};
+
+export const createOrUpdateKiroModel = async (
+  accessToken: string,
+  payload: {
+    modelName: string;
+    modelId: string;
+    apiBase: string;
+    modelDbId?: string | null;
+  },
+): Promise<{ model_id: string }> => {
+  try {
+    if (payload.modelDbId && payload.modelDbId.trim().length > 0) {
+      const updateUrl = proxyBaseUrl
+        ? `${proxyBaseUrl}/model/${payload.modelDbId}/update`
+        : `/model/${payload.modelDbId}/update`;
+
+      const updateResponse = await fetch(updateUrl, {
+        method: "PATCH",
+        headers: {
+          [globalLitellmHeaderName]: `Bearer ${accessToken}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          model_name: payload.modelName,
+          litellm_params: {
+            model: payload.modelId,
+            api_base: payload.apiBase,
+            api_key: "os.environ/KIRO_GATEWAY_API_KEY",
+          },
+        }),
+      });
+
+      if (updateResponse.ok) {
+        return { model_id: payload.modelDbId };
+      }
+
+      if (updateResponse.status !== 404) {
+        let errorMessage = "Failed to update Kiro model";
+        try {
+          const errorData = await updateResponse.json();
+          errorMessage = deriveErrorMessage(errorData);
+        } catch {
+          const errorData = await updateResponse.text();
+          if (errorData) {
+            errorMessage = errorData;
+          }
+        }
+        handleError(errorMessage);
+        throw new Error(errorMessage);
+      }
+    }
+
+    const createResponse = await modelCreateCall(accessToken, {
+      model_name: payload.modelName,
+      litellm_params: {
+        model: payload.modelId,
+        api_base: payload.apiBase,
+        api_key: "os.environ/KIRO_GATEWAY_API_KEY",
+      },
+      model_info: {},
+    });
+
+    const createdModelId = createResponse?.model_id || createResponse?.data?.model_id;
+
+    if (!createdModelId) {
+      throw new Error("Failed to get created model id from response");
+    }
+
+    return { model_id: createdModelId };
+  } catch (error) {
+    console.error("Failed to create/update Kiro model:", error);
     throw error;
   }
 };

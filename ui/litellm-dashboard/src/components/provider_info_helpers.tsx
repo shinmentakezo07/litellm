@@ -200,7 +200,7 @@ export const getPlaceholder = (selectedProvider: string): string => {
   } else if (selectedProvider == Providers.JinaAI) {
     return "jina_ai/";
   } else if (selectedProvider == Providers.KiroGateway) {
-    return "kiro_gateway/us.anthropic.claude-sonnet-4-20250514-v1:0";
+    return "kiro_gateway/claude-sonnet-4-5";
   } else if (selectedProvider == Providers.VolcEngine) {
     return "volcengine/<any-model-on-volcengine>";
   } else if (selectedProvider == Providers.DeepInfra) {

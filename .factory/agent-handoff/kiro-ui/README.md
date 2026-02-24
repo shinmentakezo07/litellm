@@ -45,7 +45,7 @@ This handoff doc summarizes what was implemented for Kiro provider support and w
 - `ui/litellm-dashboard/src/components/provider_info_helpers.tsx`
   - `Providers.KiroGateway = "Kiro Gateway"`
   - provider map includes `kiro_gateway`
-  - placeholder set to `kiro_gateway/us.anthropic.claude-sonnet-4-20250514-v1:0`
+  - placeholder set to `kiro_gateway/claude-sonnet-4-5` (normalized kiro-gateway model id)
 
 - `ui/litellm-dashboard/src/components/kiro_settings.tsx`
   - form to load/save:

@@ -137,7 +137,7 @@ describe("provider_info_helpers", () => {
     });
 
     it("should return kiro_gateway placeholder for KiroGateway provider", () => {
-      expect(getPlaceholder(Providers.KiroGateway)).toBe("kiro_gateway/us.anthropic.claude-sonnet-4-20250514-v1:0");
+      expect(getPlaceholder(Providers.KiroGateway)).toBe("kiro_gateway/claude-sonnet-4-5");
     });
 
     it("should return volcengine placeholder for VolcEngine provider", () => {

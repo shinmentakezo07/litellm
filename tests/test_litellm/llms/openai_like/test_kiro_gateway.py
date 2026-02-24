@@ -47,13 +47,13 @@ class TestKiroGatewayProviderConfig:
         from litellm.litellm_core_utils.get_llm_provider_logic import get_llm_provider
 
         model, provider, api_key, api_base = get_llm_provider(
-            model="kiro_gateway/us.anthropic.claude-sonnet-4-20250514-v1:0",
+            model="kiro_gateway/claude-sonnet-4-5",
             custom_llm_provider=None,
             api_base=None,
             api_key=None,
         )
 
-        assert model == "us.anthropic.claude-sonnet-4-20250514-v1:0"
+        assert model == "claude-sonnet-4-5"
         assert provider == "kiro_gateway"
         assert api_base == "http://localhost:8000/v1"
 
@@ -66,7 +66,7 @@ class TestKiroGatewayProviderConfig:
                 {
                     "model_name": "kiro-sonnet",
                     "litellm_params": {
-                        "model": "kiro_gateway/us.anthropic.claude-sonnet-4-20250514-v1:0",
+                        "model": "kiro_gateway/claude-sonnet-4-5",
                         "api_key": "test-key",
                     },
                 }
@@ -94,7 +94,7 @@ class TestKiroGatewayIntegration:
 
         try:
             response = litellm.completion(
-                model="kiro_gateway/us.anthropic.claude-sonnet-4-20250514-v1:0",
+                model="kiro_gateway/claude-sonnet-4-5",
                 messages=[{"role": "user", "content": "Say 'test successful' and nothing else"}],
                 max_tokens=16,
             )

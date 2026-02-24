@@ -11433,6 +11433,8 @@ async def get_config_list(
         "mcp_trusted_proxy_ranges": {"type": "List"},
         "kiro_model_id": {"type": "String"},
         "kiro_refresh_token": {"type": "String"},
+        "kiro_api_base": {"type": "String"},
+        "kiro_model_db_id": {"type": "String"},
         "always_include_stream_usage": {"type": "Boolean"},
         "forward_client_headers_to_llm_api": {"type": "Boolean"},
     }
