@@ -26,15 +26,6 @@
       "max_completion_tokens": "max_tokens"
     }
   },
-  "kiro_gateway": {
-    "base_url": "http://localhost:8000/v1",
-    "api_key_env": "KIRO_GATEWAY_API_KEY",
-    "api_base_env": "KIRO_GATEWAY_API_BASE",
-    "base_class": "openai_gpt",
-    "param_mappings": {
-      "max_completion_tokens": "max_tokens"
-    }
-  },
   "scaleway": {
     "base_url": "https://api.scaleway.ai/v1",
     "api_key_env": "SCW_SECRET_KEY"

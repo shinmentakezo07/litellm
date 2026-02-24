@@ -13,6 +13,7 @@ import { fetchTeams } from "@/components/common_components/fetch_teams";
 import LoadingScreen from "@/components/common_components/LoadingScreen";
 import { CostTrackingSettings } from "@/components/CostTrackingSettings";
 import GeneralSettings from "@/components/general_settings";
+import GuardrailsMonitorView from "@/components/GuardrailsMonitor/GuardrailsMonitorView";
 import GuardrailsPanel from "@/components/guardrails";
 import PoliciesPanel from "@/components/policies";
 import { Team } from "@/components/key_team_helpers/key_list";
@@ -35,7 +36,6 @@ import TransformRequestPanel from "@/components/transform_request";
 import UIThemeSettings from "@/components/ui_theme_settings";
 import Usage from "@/components/usage";
 import UserDashboard from "@/components/user_dashboard";
-import KiroSettings from "@/components/kiro_settings";
 import { AccessGroupsPage } from "@/components/AccessGroups/AccessGroupsPage";
 import VectorStoreManagement from "@/components/vector_store_management";
 import SpendLogsTable from "@/components/view_logs";
@@ -498,8 +498,6 @@ function CreateKeyPageContent() {
                     />
                   ) : page == "ui-theme" ? (
                     <UIThemeSettings userID={userID} userRole={userRole} accessToken={accessToken} />
-                  ) : page == "kiro-settings" ? (
-                    <KiroSettings accessToken={accessToken} />
                   ) : page == "cost-tracking" ? (
                     <CostTrackingSettings userID={userID} userRole={userRole} accessToken={accessToken} />
                   ) : page == "model-hub-table" ? (
@@ -550,6 +548,8 @@ function CreateKeyPageContent() {
                     <AccessGroupsPage />
                   ) : page == "vector-stores" ? (
                     <VectorStoreManagement accessToken={accessToken} userRole={userRole} userID={userID} />
+                  ) : page == "guardrails-monitor" ? (
+                    <GuardrailsMonitorView accessToken={accessToken} />
                   ) : page == "new_usage" ? (
                     <NewUsagePage
                       teams={(teams as Team[]) ?? []}
