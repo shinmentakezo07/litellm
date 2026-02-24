@@ -2145,6 +2145,22 @@ class ConfigGeneralSettings(LiteLLMPydanticObjectBase):
         None,
         description="CIDR ranges of trusted reverse proxies. When set, X-Forwarded-For headers are only trusted from these IPs.",
     )
+    kiro_model_id: Optional[str] = Field(
+        None,
+        description="Default Kiro model id for dashboard Kiro settings.",
+    )
+    kiro_refresh_token: Optional[str] = Field(
+        None,
+        description="Kiro refresh token for dashboard Kiro settings.",
+    )
+    kiro_api_base: Optional[str] = Field(
+        None,
+        description="Kiro Gateway API base URL for dashboard Kiro settings.",
+    )
+    kiro_model_db_id: Optional[str] = Field(
+        None,
+        description="DB model_id of the Kiro model auto-managed from dashboard settings.",
+    )
     store_model_in_db: Optional[bool] = Field(
         None,
         description="If True, models and config are stored in and loaded from the database. Default is False.",

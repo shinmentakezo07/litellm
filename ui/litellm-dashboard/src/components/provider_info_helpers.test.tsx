@@ -136,6 +136,10 @@ describe("provider_info_helpers", () => {
       expect(getPlaceholder(Providers.JinaAI)).toBe("jina_ai/");
     });
 
+    it("should return kiro_gateway placeholder for KiroGateway provider", () => {
+      expect(getPlaceholder(Providers.KiroGateway)).toBe("kiro_gateway/claude-sonnet-4-5");
+    });
+
     it("should return volcengine placeholder for VolcEngine provider", () => {
       expect(getPlaceholder(Providers.VolcEngine)).toBe("volcengine/<any-model-on-volcengine>");
     });
