@@ -36,6 +36,7 @@ export const pageDescriptions: Record<string, string> = {
   "router-settings": "Configure routing and load balancing settings",
   "logging-and-alerts": "Set up logging and alert configurations",
   "admin-panel": "Access admin panel and settings",
+  "kiro-settings": "Configure Kiro Gateway credentials and model mapping",
 };
 
 export interface PageMetadata {

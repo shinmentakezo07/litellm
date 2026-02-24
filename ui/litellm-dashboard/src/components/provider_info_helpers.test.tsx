@@ -160,6 +160,10 @@ describe("provider_info_helpers", () => {
       expect(getPlaceholder(Providers.Watsonx)).toBe("watsonx/ibm/granite-3-3-8b-instruct");
     });
 
+    it("should return kiro_gateway placeholder for KiroGateway provider", () => {
+      expect(getPlaceholder(Providers.KiroGateway)).toBe("kiro_gateway/claude-sonnet-4-5");
+    });
+
     it("should return default gpt-3.5-turbo placeholder for unknown provider", () => {
       expect(getPlaceholder("UnknownProvider" as any)).toBe("gpt-3.5-turbo");
     });

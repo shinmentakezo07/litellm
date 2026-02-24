@@ -325,6 +325,13 @@ const menuGroups: MenuGroup[] = [
             icon: <BgColorsOutlined />,
             roles: all_admin_roles,
           },
+          {
+            key: "kiro-settings",
+            page: "kiro-settings",
+            label: "Kiro Gateway",
+            icon: <SettingOutlined />,
+            roles: all_admin_roles,
+          },
         ],
       },
     ],

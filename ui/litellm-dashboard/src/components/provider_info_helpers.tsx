@@ -44,6 +44,7 @@ export enum Providers {
   xAI = "xAI",
   SAP = "SAP Generative AI Hub",
   Watsonx = "Watsonx",
+  KiroGateway = "Kiro Gateway",
 }
 
 export const provider_map: Record<string, string> = {
@@ -92,6 +93,7 @@ export const provider_map: Record<string, string> = {
   Infinity: "infinity",
   SAP: "sap",
   Watsonx: "watsonx",
+  KiroGateway: "kiro_gateway",
 };
 
 const asset_logos_folder = "../ui/assets/logos/";
@@ -141,6 +143,7 @@ export const providerLogoMap: Record<string, string> = {
   [Providers.VolcEngine]: `${asset_logos_folder}volcengine.png`,
   [Providers.DeepInfra]: `${asset_logos_folder}deepinfra.png`,
   [Providers.SAP]: `${asset_logos_folder}sap.png`,
+  [Providers.KiroGateway]: `${asset_logos_folder}anthropic.svg`,
 };
 
 export const getProviderLogoAndName = (providerValue: string): { logo: string; displayName: string } => {

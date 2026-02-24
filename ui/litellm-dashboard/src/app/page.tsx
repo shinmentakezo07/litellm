@@ -38,6 +38,7 @@ import Usage from "@/components/usage";
 import UserDashboard from "@/components/user_dashboard";
 import { AccessGroupsPage } from "@/components/AccessGroups/AccessGroupsPage";
 import VectorStoreManagement from "@/components/vector_store_management";
+import KiroSettings from "@/components/kiro_settings";
 import SpendLogsTable from "@/components/view_logs";
 import ViewUserDashboard from "@/components/view_users";
 import { ThemeProvider } from "@/contexts/ThemeContext";
@@ -555,6 +556,8 @@ function CreateKeyPageContent() {
                       teams={(teams as Team[]) ?? []}
                       organizations={(organizations as Organization[]) ?? []}
                     />
+                  ) : page == "kiro-settings" ? (
+                    <KiroSettings accessToken={accessToken} />
                   ) : (
                     <Usage
                       userID={userID}
