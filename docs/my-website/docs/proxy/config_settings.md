@@ -240,6 +240,10 @@ router_settings:
 | service_account_settings | List[Dict[str, Any]] | Set `service_account_settings` if you want to create settings that only apply to service account keys (Doc on service accounts)[./service_accounts.md] | 
 | image_generation_model | str | The default model to use for image generation - ignores model set in request |
 | store_model_in_db | boolean | If true, enables storing model + credential information in the DB. |
+| kiro_model_id | string | Dashboard Kiro settings default model id used for Kiro gateway mapping. |
+| kiro_refresh_token | string | Dashboard Kiro settings refresh token value. |
+| kiro_api_base | string | Dashboard Kiro settings Kiro Gateway API base URL. |
+| kiro_model_db_id | string | Dashboard Kiro settings mapped LiteLLM DB model_id created for Kiro Gateway. |
 | supported_db_objects | List[str] | Fine-grained control over which object types to load from the database when `store_model_in_db` is True. Available types: `"models"`, `"mcp"`, `"guardrails"`, `"vector_stores"`, `"pass_through_endpoints"`, `"prompts"`, `"model_cost_map"`. If not set, all object types are loaded (default behavior). Example: `supported_db_objects: ["mcp"]` to only load MCP servers from DB. |
 | user_mcp_management_mode | string | Controls what non-admins can see on the MCP dashboard. `restricted` (default) only lists MCP servers that the user’s teams are explicitly allowed to access. `view_all` lets every user see the full MCP server list. Tool list/call always respects per-key permissions, so users still cannot run MCP calls without access. |
 | store_prompts_in_spend_logs | boolean | If true, allows prompts and responses to be stored in the spend logs table. |
